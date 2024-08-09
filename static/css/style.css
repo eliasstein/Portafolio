@@ -63,6 +63,23 @@ header {
 
 
 }
+@media screen and (max-width:576px){
+    .icon-container{
+        padding-top: 30px;
+        display: grid;
+        grid-template-areas:'title .'
+                            'c1 c2'
+                            'c3 c4'
+                            'c5 c6'
+                            'c7 c8'
+                            'c9 .';
+        column-gap: 50%;
+        grid-template-columns:repeat(2,50%);
+        /* grid-template-columns: repeat(3,1fr); */
+    
+    
+    }
+}
 
 
 .title{
