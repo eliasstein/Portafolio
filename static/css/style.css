@@ -1,0 +1,127 @@
+.round-image{
+    border-radius: 80%;
+    border: 3px solid gray;
+}
+.back-img{
+    background-image: url("../img/bg-4.jpeg");
+    /* background-size: contain; */
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+}
+.back-img-2{
+    background-image: url("../img/bg-2.jpeg");
+    /* background-size: contain; */
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+}
+.back-blur{
+    backdrop-filter:blur(3px) grayscale(30%) brightness(0.7);
+
+}
+
+@keyframes bounce{ 
+    from { transform: translate3d(0, 0, 0);} 
+    to { transform: translate3d(0, 5px, 0);} 
+} 
+.bounce-anim{
+    animation: bounce 1s; 
+    animation-timing-function: ease;
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+}
+.bigger-transition{
+    transition: all .3s ease;
+
+}
+.bigger-transition:hover{
+    transform: scale(1.2);
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#github{
+    filter: invert(100%) brightness(95%);
+}
+
+.icon-section{
+    width: 45%;
+    margin-left:10%;
+}
+
+.icon-container{
+    padding-top: 30px;
+    display: grid;
+    grid-template-areas:'title . .'
+                        'c1 c2 c3'
+                        'c4 c5 c6'
+                        'c7 c8 c9';
+    row-gap: 10px;
+    grid-template-columns:repeat(3,33.3%);
+    /* grid-template-columns: repeat(3,1fr); */
+
+
+}
+
+
+.title{
+    grid-area: title;
+    text-align: start;
+    padding-bottom: 10px;
+}
+.c1{
+    grid-area: c1;
+}
+.c2{
+    grid-area: c2;
+}
+.c3{
+    grid-area: c3;
+}
+.c4{
+    grid-area: c4;
+}
+.c5{
+    grid-area: c5;
+}
+.c6{
+    grid-area: c6;
+}
+.c7{
+    grid-area: c7;
+}
+.c8{
+    grid-area: c8;
+}
+.c9{
+    grid-area: c9;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 163); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blue; 
+  }
+
+
+
+/* ////////////////////////////////////TEST//////////////////////////////////*/
+
+
